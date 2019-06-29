@@ -3,6 +3,7 @@ import {GoogleLogin} from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import TwitterLogin from 'react-twitter-auth';
 import Header from './header';
+import Login from './login-form';
 
 class App extends React.Component {
   constructor(props) {
@@ -33,6 +34,8 @@ class App extends React.Component {
     return(
       <div>
         <Header /> 
+        <div className="skew"></div>
+        <Login />
         {/* <GoogleLogin
           redirectUri="http://localhost:3000"
           clientId="401685601588-6c3a34thb8783n9v7701etv06td738qe.apps.googleusercontent.com"
